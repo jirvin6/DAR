@@ -1,0 +1,7 @@
+```{r}
+#library dataset 
+library(readr)
+EBR_Demographic_Data <- read_csv("EBR Demographic Data.csv")
+View(EBR_Demographic_Data)
+
+```
