@@ -1,0 +1,34 @@
+---
+title: "Assignment 2"
+author: "Jen, Fahmida , and Nicole"
+date: "2/25/2022"
+output: html_document
+---
+## Social-Ecological Analysis of East Baton Rouge Parish
+Our group is broadly interested in environmental justice and spatial analysis.  However, we also each bring individual interests to the table.  Fahmida is working on flooding and watershed issues in Louisiana.  I am interested in environmental health, with an emphasis on exposures to hazardous sites and air pollution.  Nicole is broadly interested in water quality.  We though it might be interesting to examine relationships between flood risk, hazardous sites, and water quality.  Our goal heading into this assignment was to integrate flood risk data, water quality data, and data on hazardous sites, but we could not easily find some of this information in formats that would work well with each other.  So, we decided to focus more on environmental justice and less on flooding and water issues.
+
+## The Data
+
+*EPA EJSCREEN*
+Jen will describe this
+
+*EBR Schools*
+Fahamida will describe this
+
+*EBR Demographics/ ACS Data*
+Nicole will describe this
+
+## The Code
+code chunk - replace with code to pull in all data
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+code chunk - replace with code for plots
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
