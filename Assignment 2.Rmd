@@ -4,13 +4,13 @@ author: "Jen, Fahmida , and Nicole"
 date: "2/25/2022"
 output: html_document
 ---
-## Social-Ecological Analysis of East Baton Rouge Parish
+## Social-Ecological Analysis of East Baton Rouge Parish (feel free to change the title)
 Our group is broadly interested in environmental justice and spatial analysis.  However, we also each bring individual interests to the table.  Fahmida is working on flooding and watershed issues in Louisiana.  I am interested in environmental health, with an emphasis on exposures to hazardous sites and air pollution.  Nicole is broadly interested in water quality.  We though it might be interesting to examine relationships between flood risk, hazardous sites, and water quality.  Our goal heading into this assignment was to integrate flood risk data, water quality data, and data on hazardous sites, but we could not easily find some of this information in formats that would work well with each other.  So, we decided to focus more on environmental justice and less on flooding and water issues.
 
 ## The Data
 
 *EPA EJSCREEN*
-Jen will describe this
+The United States (US) Environmental Protection Agency curates a wide variety of data on environmental health indicators in in the United States. This data comes from several different sources: air quality monitors around the country, the [National Air Toxics Assessment program] (https://www.epa.gov/national-air-toxics-assessment/nata-overview), and mandated reporting by regulated industries that produce and handle handle hazardous waste.  This data is integrated with information from the American Community Survey in a nation-wide environmental justice screening and mapping tool called EJSCREEN. [EJSCREEN data](https://gaftp.epa.gov/EJSCREEN/) is available for the years 2015 – 2020.  The data can be downloaded as CSV file or as a geodatabase (gdb) file.
 
 *EBR Schools*
 Fahamida will describe this
