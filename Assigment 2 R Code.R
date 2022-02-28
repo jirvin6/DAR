@@ -62,3 +62,12 @@ ggplot(data = data_frame) +
   geom_point(mapping = aes(x = blackM, y=hazardous_waste)) +
   facet_wrap(~ ozone, nrow = 2)
 
+#Graph_03
+boxplot(data_frame$blackM ~ data_frame$hazardous_waste,
+        xlab = "BlackM", # x-axis label
+        ylab = "Hazardour_Waste", # y-axis label
+        las = 1, # Rotate numbers on y-axis
+        ylim = c(0,1000), # Range of y-axis
+        col = "lightblue", # Boxplot fill color
+        border = "darkred", # Boxplot border color
+        pch = 19) # Symbol for outliers
