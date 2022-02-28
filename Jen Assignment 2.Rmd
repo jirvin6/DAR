@@ -1,0 +1,33 @@
+---
+title: "Assignment 2"
+author: "Jen, Fahmida , and Nicole"
+date: "2/25/2022"
+output: html_document
+---
+
+## Environmental Health in East Baton Rouge Parish
+Our group is broadly interested in environmental justice and spatial analysis.  However, we also each bring individual interests to the table.  Fahmida is working on flooding and watershed issues in Louisiana.  I am interested in environmental health, with an emphasis on exposures to hazardous sites and air pollution.  Nicole is broadly interested in water quality.  We though it might be interesting to examine relationships between flood risk, hazardous sites, and water quality.  Our goal heading into this assignment was to integrate flood risk data, water quality data, and data on hazardous sites, but we could not easily find some of this information in formats that would work well with each other.  So, we decided to focus more on environmental justice and less on flooding and water issues.
+
+## The Data
+
+*EPA EJSCREEN*  
+
+The United States (US) Environmental Protection Agency curates a wide variety of data on environmental health indicators in in the United States. This data comes from several different sources: air quality monitors around the country, the [National Air Toxics Assessment program] (https://www.epa.gov/national-air-toxics-assessment/nata-overview), and mandated reporting by regulated industries that produce and handle handle hazardous waste.  This data is integrated with information from the American Community Survey in a nation-wide environmental justice screening and mapping tool called EJSCREEN. [EJSCREEN data](https://gaftp.epa.gov/EJSCREEN/) is available for the years 2015 – 2020.  The data can be downloaded as CSV file or as a geodatabase (gdb) file. The data for this project has been narrowed down to East Baton Rouge Parish.  
+
+*CDC Places Data (if needed)*  
+
+The Center for Disease Control and Prevention (CDC) PLACES data provides model-based population-level analysis and community estimates to all counties, places (incorporated and census designated places), census tracts, and ZIP Code Tabulation Areas (ZCTAs) across the United States. The estimates are from the Behavioral Risk Factor Surveillance System (BRFSS) 2019 data and include health outcomes data such a the prevelance of asthma, heart disease, and obesity. The [CDC Places Data](https://www.cdc.gov/places/index.html) can be downloaded as a .csv file.  The data for this project has been narrowed down to East Baton Rouge Parish.  
+
+*Demographics data from the American Community Survey (ACS)*  
+
+The American Community Survey (ACS) is an ongoing survey conducted by the United States Census Bureau.  It is considered one of the best sources for demographic and housing data. ACS data can be downloaded in many different formats from the [US Census website](https://data.census.gov/cedsci/).However, we wanted to explore importing this data directly into R, so we used something called an API key.
+
+*A Concept Map of the Data*  
+
+We wanted to explore relationships between environmental health, social economic factors (especially race), and human health at the census tract level in East Baton Rouge Parish, Louisiana. 
+![Alt text](\Users\15079\Desktop\School\Data Analysis in R\EBR Concept Map.jpg)
+
+## The Code  
+
+The first step to create our database was to download demographic data from the ACS. The code below does this and creates a dataset we called EBR_wide.
+
