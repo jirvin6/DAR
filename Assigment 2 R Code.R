@@ -40,6 +40,7 @@ View(EBR_wide)
 
 ejscreen <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ejscreen_2022.csv")
 cdc_places <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/CDC_Places.csv")
+ebr_wide <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ebr_wide.csv")
 
 # OK. Now we need to combine this data
 EBR_wide<-EBR_wide[-92,,]
