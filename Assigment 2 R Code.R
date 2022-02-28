@@ -35,16 +35,18 @@ EBR_wide <- get_acs(
                 two_or_more = "B02001_008"),
   output = "wide")
 View(EBR_wide)
+order(EBR_wide)
+colnames(EBR_wide)
+EBR <-EBR_wide[order(EBR_wide$GEOID),] 
 
 # load other datasets from GitHub
 
 ejscreen <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ejscreen_2022.csv")
 cdc_places <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/CDC_Places.csv")
 ebr_wide <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ebr_wide.csv")
+View(ebr_wide)
 
 # OK. Now we need to combine this data
-EBR_wide<-EBR_wide[-92,,]
-data_frame <-cbind(EBR_wide,ejscreen,cdc_places) #this should do the trick if the column matches 
+EBR<-EBR[-92,,]
+data_frame <-cbind(EBR,ejscreen,cdc_places) #this should do the trick if the column matches 
 View(data_frame)
-
-
