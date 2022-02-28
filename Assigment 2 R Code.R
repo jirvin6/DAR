@@ -42,6 +42,6 @@ ejscreen <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ejscre
 cdc_places <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/CDC_Places.csv")
 
 # OK. Now we need to combine this data
-data_frame <-cbind(ejscreen, ebrschools, EBR_wide) #this should do the trick if the column matches 
+data_frame <-cbind(ejscreen, cdc_places, EBR_wide) #this should do the trick if the column matches 
 
 
