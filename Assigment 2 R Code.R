@@ -39,7 +39,7 @@ View(EBR_wide)
 # load other datasets from GitHub
 
 ejscreen <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ejscreen_2022.csv")
-ebr_schools <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/Public%20Scool%20Data%20in%20EBR.csv")
+cdc_places <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/CDC_Places.csv")
 
 # OK. Now we need to combine this data
 data_frame <-cbind(ejscreen, ebrschools, EBR_wide) #this should do the trick if the column matches 
