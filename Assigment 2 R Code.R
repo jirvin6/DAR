@@ -50,3 +50,15 @@ View(ebr_wide)
 EBR<-EBR[-92,,]
 data_frame <-cbind(EBR,ejscreen,cdc_places) #this should do the trick if the column matches 
 View(data_frame)
+
+
+#Graph_01
+ggplot(data = data_frame, mapping = aes(x= traffic, y=OBESITY_CrudePrev))+
+  geom_point(mapping = aes(color = education))+
+  geom_smooth()
+
+#Graph_02
+ggplot(data = data_frame) + 
+  geom_point(mapping = aes(x = blackM, y=hazardous_waste)) +
+  facet_wrap(~ ozone, nrow = 2)
+
