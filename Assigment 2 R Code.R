@@ -65,7 +65,7 @@ ggplot(data = data_frame) +
 #Graph_03
 boxplot(data_frame$blackM ~ data_frame$hazardous_waste,
         xlab = "BlackM", # x-axis label
-        ylab = "Hazardour_Waste", # y-axis label
+        ylab = "Hazardous_Waste", # y-axis label
         las = 1, # Rotate numbers on y-axis
         ylim = c(0,1000), # Range of y-axis
         col = "lightblue", # Boxplot fill color
