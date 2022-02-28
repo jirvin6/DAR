@@ -42,6 +42,8 @@ ejscreen <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/ejscre
 cdc_places <- read.csv ("https://raw.githubusercontent.com/jirvin6/DAR/main/CDC_Places.csv")
 
 # OK. Now we need to combine this data
-data_frame <-cbind(ejscreen, cdc_places, EBR_wide) #this should do the trick if the column matches 
+EBR_wide<-EBR_wide[-92,,]
+data_frame <-cbind(EBR_wide,ejscreen,cdc_places) #this should do the trick if the column matches 
+View(data_frame)
 
 
